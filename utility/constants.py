@@ -1,6 +1,4 @@
 import os
-from datetime import datetime
-
 
 # Global Variable Section
 DB_FILE = str(os.getcwd()) + "/database.db"
