@@ -13,12 +13,11 @@ def get_time_diff(last_visited, new_time):
         strptime(last_visited_formatted, constants.FMT)
 
 
-def get_movie_people_relation(title, people_dict):
+def get_movie_people_relation(title, people_dict, movie_people_dict):
     """
     Get the relation between movie title and
     the corresponding people and return as dict
     """
-    movie_people_dict = {}
     for item in title:
         for key in people_dict.keys():
             for movie_title in people_dict[key]:

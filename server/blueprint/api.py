@@ -41,7 +41,7 @@ def show_list_of_movies():
             # Get People list from the API
             get_people_list(people_dict)
             # Enquire in people_dict for the
-            movie_people_dict = get_movie_people_relation(title, people_dict)
+            get_movie_people_relation(title, people_dict, movie_people_dict)
             # Assign the latest request time to the variable
             last_visited = new_time
         except (RuntimeError, Exception):

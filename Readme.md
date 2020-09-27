@@ -22,6 +22,7 @@ http://localhost:8000/movies/
 Here localhost:Port Number/movies/ is the endpoint for user
 
 ***Using curl***
+
 Use the following curl command to get the movie data
 
 curl -H "Content-Type: application/json" -X GET http://localhost:8000/movies/
